@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Challenge #1 - Forms</title> <!-- Font Awesome -->
+  <title>Challenge #1 - Forms</title>
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
     integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
   <!-- Google fonts -->
@@ -15,34 +16,50 @@
 
 <body>
   <main class="main">
-    <header class="top"> <img src="../assets/img/logo.png" alt="masterlab logo" class="logo"> </header>
-    <div class="grid">
-      <div class="grid__item">
+    <header class="top">
+      <img src="../assets/img/logo.png" alt="masterlab logo" class="logo">
+    </header>
+    <div class="flex">
+      <div class="flex__item">
         <section class="container register">
           <h1 class="container__title">Register Form</h1>
           <div class="background">
             <div class="form-container">
-              <form action="" class="form register-form"> <label for="register-form__user" class="form__label"> <i
-                    class="form__icon fas fa-user"></i> <input id="register-form__user" type="text"
-                    placeholder="Username" class="form__input"> </label> <label for="register-form__password"
-                  class="form__label"> <i class="form__icon fas fa-unlock"></i> <input id="register-form__password"
-                    type="password" placeholder="Password" class="form__input"> </label> <label
-                  for="register-form__confirm" class="form__label"> <i class="form__icon fas fa-unlock"></i> <input
-                    id="register-form__confirm" type="password" placeholder="Confirm Password" class="form__input">
-                </label> <label for="register-form__mail" class="form__label"> <i
-                    class="form__icon fas fa-envelope"></i> <input id="register-form__mail" type="email"
-                    placeholder="Email" class="form__input"> </label> <label for="register-form__select"
-                  class="form__label"> <i class="form__icon fas fa-thumbtack"></i> <select name="select"
-                    id="register-form__select" class="form__input form__input--location">
+              <form action="" class="form register-form">
+                <label for="register-form__user" class="form__label">
+                  <i class="form__icon fas fa-user"></i>
+                  <input required id="register-form__user" type="text" placeholder="Username" class="form__input">
+                </label>
+                <label for="register-form__password" class="form__label">
+                  <i class="form__icon fas fa-unlock"></i>
+                  <input required id="register-form__password" type="password" placeholder="Password"
+                    class="form__input">
+                </label>
+                <label for="register-form__confirm" class="form__label">
+                  <i class="form__icon fas fa-unlock"></i>
+                  <input required id="register-form__confirm" type="password" placeholder="Confirm Password"
+                    class="form__input">
+                </label>
+                <label for="register-form__mail" class="form__label">
+                  <i class="form__icon fas fa-envelope"></i>
+                  <input required id="register-form__mail" type="email" placeholder="Email" class="form__input">
+                </label>
+                <label for="register-form__select" class="form__label">
+                  <i class="form__icon fas fa-thumbtack"></i>
+                  <select required name="select" id="register-form__select" class="form__input form__input--location">
                     <option value="0" selected disabled>Your location</option>
                     <option value="1">Poland</option>
                     <option value="2">Germany</option>
                     <option value="3">Irleand</option>
                     <option value="4">USA</option>
                     <option value="5">Canada</option>
-                  </select> </label> <input type="checkbox" name="checkbox" id="register-from__checkbox"
-                  class="form__input form__input--check"> <label for="register-from__checkbox">I have read and accept
-                  the terms of use</label> <button type="submit" class="button sign-up">Sign up</button> </form>
+                  </select> </label>
+                <div class="form__checkbox"><input required type="checkbox" name="checkbox" id="register-from__checkbox"
+                    class="form__input--check">
+                  <label for="register-from__checkbox">I have read and accept the terms of use</label>
+                </div>
+                <button type="submit" class="button sign-up">Sign up</button>
+              </form>
             </div>
           </div>
         </section>
@@ -50,32 +67,49 @@
           <h2 class="container__title">Send Mail</h1>
             <div class="background">
               <div class="form-container">
-                <form action="" class="form message-form"> <label for="message-form__user" class="form__label"> <i
-                      class="form__icon fas fa-user"></i> <input id="message-form__user" type="text"
-                      placeholder="Username" class="form__input"> </label> <label for="message-form__mail"
-                    class="form__label"> <i class="form__icon fas fa-envelope"></i> <input id="message-form__mail"
-                      type="email" placeholder="Email" class="form__input"> </label> <textarea name="textarea"
-                    id="tmessage-form__textarea" cols="50" rows="15"></textarea> <input type="checkbox" name="checkbox"
-                    id="message-from__checkbox" class="form__input form__input--check"> <label
-                    for="message-from__checkbox">Send a copy to my email</label> <button type="submit"
-                    class="button send-email">Send Email</button> </form>
+                <form action="" class="form message-form">
+                  <label for="message-form__user" class="form__label">
+                    <i class="form__icon fas fa-user"></i>
+                    <input required id="message-form__user" type="text" placeholder="Username" class="form__input">
+                  </label>
+                  <label for="message-form__mail" class="form__label">
+                    <i class="form__icon fas fa-envelope"></i>
+                    <input required id="message-form__mail" type="email" placeholder="Email" class="form__input">
+                  </label>
+                  <textarea required placeholder="Type your message .." name="textarea" id="message-form__textarea"
+                    cols="10" rows="10" class="form__input--message"></textarea>
+                  <div class="form__checkbox">
+                    <input required type="checkbox" name="checkbox" id="message-from__checkbox"
+                      class="form__input--check">
+                    <label for="message-form__checkbox">Send a copy to my email</label>
+                  </div>
+                  <button type="submit" class="button send-email">Send Email</button> </form>
               </div>
             </div>
         </section>
       </div>
-      <div class="grid__item">
+      <div class="flex__item">
         <section class="container login">
           <h2 class="container__title">Sign In Form</h1>
             <div class="background">
               <div class="form-container">
-                <form action="" class="form login-form"> <label for="login-form__user" class="form__label"> <i
-                      class="form__icon fas fa-user"></i> <input id="login-form__user" type="text"
-                      placeholder="Username" class="form__input"> </label> <label for="login-form__password"
-                    class="form__label"> <i class="form__icon fas fa-unlock"></i> <input id="login-form__password"
-                      type="password" placeholder="Password" class="form__input"> </label> <input type="checkbox"
-                    name="checkbox" id="login-from__checkbox" class="form__input form__input--check"> <label
-                    for="login-from__checkbox">Remember me</label> <button type="submit" class="button sign-in">Sign
-                    in</button> </form>
+                <form action="" class="form login-form">
+                  <label for="login-form__user" class="form__label">
+                    <i class="form__icon fas fa-user"></i>
+                    <input required id="login-form__user" type="text" placeholder="Username" class="form__input">
+                  </label>
+                  <label for="login-form__password" class="form__label">
+                    <i class="form__icon fas fa-unlock"></i>
+                    <input required id="login-form__password" type="password" placeholder="Password"
+                      class="form__input">
+                  </label>
+                  <div class="form__checkbox form__checkbox--special">
+                    <input required type="checkbox" name="checkbox" id="login-from__checkbox"
+                      class="form__input--check">
+                    <label for="login-from__checkbox">Remember me</label>
+                    <button type="submit" class="button form__checkbox--sign-in">Sign in</button>
+                  </div>
+                </form>
               </div>
             </div>
         </section>
@@ -83,31 +117,43 @@
           <h2 class="container__title">Recover Form</h1>
             <div class="background">
               <div class="form-container">
-                <form action="" class="form recover-form"> <label for="recover-form__mail" class="form__label"> <i
-                      class="form__icon fas fa-envelope"></i> <input id="recover-form__mail" type="email"
-                      placeholder="Email" class="form__input"> </label> <label for="recover-form__phone"
-                    class="form__label"> <i class="form__icon fas fa-phone"></i> <input id="recover-form__phone"
-                      type="tel" placeholder="Enter your Phone number" class="form__input"> </label> <input
-                    type="checkbox" name="checkbox" id="recover-from__checkbox" class="form__input form__input--check">
-                  <label for="recover-from__checkbox">Remember me</label> <button type="submit"
-                    class="button restore">Restore</button> <button type="submit" class="button done">Done</button>
+                <form action="" class="form recover-form">
+                  <label for="recover-form__mail" class="form__label">
+                    <i class="form__icon fas fa-envelope"></i>
+                    <input required id="recover-form__mail" type="email" placeholder="Email" class="form__input">
+                  </label>
+                  <label for="recover-form__phone" class="form__label">
+                    <i class="form__icon fas fa-phone"></i>
+                    <input required id="recover-form__phone" type="tel" placeholder="Enter your Phone number"
+                      class="form__input">
+                  </label>
+                  <div class="form__buttons">
+                    <button type="submit" class="button form__buttons--restore">Restore</button>
+                    <button type="submit" class="button form__buttons--done">Done</button>
+                  </div>
                 </form>
               </div>
             </div>
         </section>
         <section class="container subscribe">
-          <h2 class="container__title">Recover Form</h1>
+          <h2 class="container__title">Subscribe</h1>
             <div class="background">
               <div class="form-container">
-                <form action="" class="form subscribe-form"> <label for="subscribe-form__mail" class="form__label"> <i
-                      class="form__icon fas fa-envelope"></i> <input id="subscribe-form__mail" type="email"
-                      placeholder="Email" class="form__input"> </label> <button type="submit"
-                    class="button sub">Subscribe</button> <button type="submit" class="button no-sub">No,
-                    thanks</button> </form>
+                <form action="" class="form subscribe-form">
+                  <label for="subscribe-form__mail" class="form__label">
+                    <i class="form__icon fas fa-envelope"></i>
+                    <input required id="subscribe-form__mail" type="email" placeholder="Email" class="form__input">
+                  </label>
+                  <div class="form__buttons">
+                    <button type="submit" class="button form__buttons--sub">Subscribe</button>
+                    <button type="submit" class="button form__buttons--unsub">No, thanks</button>
+                  </div>
+                </form>
               </div>
             </div>
         </section>
-        <div class="bottom-logo"> <img src="../assets/img/logo.png" alt="masterlab logo"> </div>
+        <div class="bottom-logo"> <img src="../assets/img/logo.png" alt="masterlab logo" class="logo logo--bottom">
+        </div>
       </div>
     </div>
   </main>
