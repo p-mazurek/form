@@ -1,153 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
 
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge #1 - Forms</title> <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="pwa/apple-icon-180.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="pwa/apple-icon-167.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="pwa/apple-icon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="pwa/apple-icon-120.png"
-    />
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-2732.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2732-2048.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2388.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2388-1668.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2224.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2224-1668.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1536-2048.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-1536.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2688.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2688-1242.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1125-2436.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2436-1125.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-828-1792.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1792-828.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2208.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2208-1242.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-750-1334.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1334-750.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-640-1136.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1136-640.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-  </head>
-  <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
+<body>
+  <main class="main">
+    <header class="top"> <img src="../assets/img/logo.png" alt="masterlab logo" class="logo"> </header>
+    <div class="grid">
+      <div class="grid__item">
+        <section class="container register">
+          <h1 class="container__title">Register Form</h1>
+          <div class="background">
+            <div class="form-container">
+              <form action="" class="form register-form"> <label for="register-form__user" class="form__label"> <i
+                    class="form__icon fas fa-user"></i> <input id="register-form__user" type="text"
+                    placeholder="Username" class="form__input"> </label> <label for="register-form__password"
+                  class="form__label"> <i class="form__icon fas fa-unlock"></i> <input id="register-form__password"
+                    type="password" placeholder="Password" class="form__input"> </label> <label
+                  for="register-form__confirm" class="form__label"> <i class="form__icon fas fa-unlock"></i> <input
+                    id="register-form__confirm" type="password" placeholder="Confirm Password" class="form__input">
+                </label> <label for="register-form__mail" class="form__label"> <i
+                    class="form__icon fas fa-envelope"></i> <input id="register-form__mail" type="email"
+                    placeholder="Email" class="form__input"> </label> <label for="register-form__select"
+                  class="form__label"> <i class="form__icon fas fa-thumbtack"></i> <select name="select"
+                    id="register-form__select" class="form__input form__input--location">
+                    <option value="0" selected disabled>Your location</option>
+                    <option value="1">Poland</option>
+                    <option value="2">Germany</option>
+                    <option value="3">Irleand</option>
+                    <option value="4">USA</option>
+                    <option value="5">Canada</option>
+                  </select> </label> <input type="checkbox" name="checkbox" id="register-from__checkbox"
+                  class="form__input form__input--check"> <label for="register-from__checkbox">I have read and accept
+                  the terms of use</label> <button type="submit" class="button sign-up">Sign up</button> </form>
+            </div>
+          </div>
+        </section>
+        <section class="container message">
+          <h2 class="container__title">Send Mail</h1>
+            <div class="background">
+              <div class="form-container">
+                <form action="" class="form message-form"> <label for="message-form__user" class="form__label"> <i
+                      class="form__icon fas fa-user"></i> <input id="message-form__user" type="text"
+                      placeholder="Username" class="form__input"> </label> <label for="message-form__mail"
+                    class="form__label"> <i class="form__icon fas fa-envelope"></i> <input id="message-form__mail"
+                      type="email" placeholder="Email" class="form__input"> </label> <textarea name="textarea"
+                    id="tmessage-form__textarea" cols="50" rows="15"></textarea> <input type="checkbox" name="checkbox"
+                    id="message-from__checkbox" class="form__input form__input--check"> <label
+                    for="message-from__checkbox">Send a copy to my email</label> <button type="submit"
+                    class="button send-email">Send Email</button> </form>
+              </div>
+            </div>
+        </section>
+      </div>
+      <div class="grid__item">
+        <section class="container login">
+          <h2 class="container__title">Sign In Form</h1>
+            <div class="background">
+              <div class="form-container">
+                <form action="" class="form login-form"> <label for="login-form__user" class="form__label"> <i
+                      class="form__icon fas fa-user"></i> <input id="login-form__user" type="text"
+                      placeholder="Username" class="form__input"> </label> <label for="login-form__password"
+                    class="form__label"> <i class="form__icon fas fa-unlock"></i> <input id="login-form__password"
+                      type="password" placeholder="Password" class="form__input"> </label> <input type="checkbox"
+                    name="checkbox" id="login-from__checkbox" class="form__input form__input--check"> <label
+                    for="login-from__checkbox">Remember me</label> <button type="submit" class="button sign-in">Sign
+                    in</button> </form>
+              </div>
+            </div>
+        </section>
+        <section class="container recover">
+          <h2 class="container__title">Recover Form</h1>
+            <div class="background">
+              <div class="form-container">
+                <form action="" class="form recover-form"> <label for="recover-form__mail" class="form__label"> <i
+                      class="form__icon fas fa-envelope"></i> <input id="recover-form__mail" type="email"
+                      placeholder="Email" class="form__input"> </label> <label for="recover-form__phone"
+                    class="form__label"> <i class="form__icon fas fa-phone"></i> <input id="recover-form__phone"
+                      type="tel" placeholder="Enter your Phone number" class="form__input"> </label> <input
+                    type="checkbox" name="checkbox" id="recover-from__checkbox" class="form__input form__input--check">
+                  <label for="recover-from__checkbox">Remember me</label> <button type="submit"
+                    class="button restore">Restore</button> <button type="submit" class="button done">Done</button>
+                </form>
+              </div>
+            </div>
+        </section>
+        <section class="container subscribe">
+          <h2 class="container__title">Recover Form</h1>
+            <div class="background">
+              <div class="form-container">
+                <form action="" class="form subscribe-form"> <label for="subscribe-form__mail" class="form__label"> <i
+                      class="form__icon fas fa-envelope"></i> <input id="subscribe-form__mail" type="email"
+                      placeholder="Email" class="form__input"> </label> <button type="submit"
+                    class="button sub">Subscribe</button> <button type="submit" class="button no-sub">No,
+                    thanks</button> </form>
+              </div>
+            </div>
+        </section>
+        <div class="bottom-logo"> <img src="../assets/img/logo.png" alt="masterlab logo"> </div>
+      </div>
     </div>
-  </body>
+  </main>
+
+</body>
+
 </html>
